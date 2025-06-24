@@ -11,6 +11,9 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+    networks:
+      - mynet
+
 
   service_2:
     build: ./service_2
@@ -22,6 +25,9 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+    networks:
+      - mynet
+
 
   nginx:
     build: ./nginx
@@ -33,3 +39,10 @@ services:
       - service_2
     volumes:
       - ./logs/nginx:/var/log/nginx
+    networks:
+      - mynet
+
+
+networks:
+  mynet:
+    driver: bridge
