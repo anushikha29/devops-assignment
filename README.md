@@ -27,6 +27,7 @@ All services run on a single port using Nginx reverse proxy:
 ### Build & Run Everything
 ```bash
 docker compose up --build
+```
 
 ### 🌐 Networking
 
