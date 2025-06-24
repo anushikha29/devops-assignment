@@ -27,3 +27,9 @@ All services run on a single port using Nginx reverse proxy:
 ### Build & Run Everything
 ```bash
 docker compose up --build
+
+### 🌐 Networking
+
+All services run on a custom Docker bridge network (`mynet`) defined in `docker-compose.yml`.  
+This isolates internal traffic and allows containers to discover each other by name.
+
