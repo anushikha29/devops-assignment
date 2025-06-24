@@ -1,4 +1,5 @@
 # 🚀 DevOps Assignment – Nginx Reverse Proxy + Docker
+[![Run with Docker Compose](https://img.shields.io/badge/Docker--Compose-Up-blue?logo=docker)](#-build--run-everything)
 
 This project sets up a Docker Compose-based system with an Nginx reverse proxy that routes traffic to two backend services (Go and Python), all accessible via a single port (`localhost:8080`).
 
